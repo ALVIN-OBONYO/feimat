@@ -1,0 +1,1 @@
+export { WomenContainer as default } from './WomenContainer';

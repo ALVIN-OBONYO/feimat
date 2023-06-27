@@ -1,0 +1,1 @@
+export { KidContainer as default } from './KidContainer';
