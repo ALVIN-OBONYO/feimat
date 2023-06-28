@@ -1,7 +1,7 @@
 import React from 'react';
 import WomenView from './WomenView';
 
-export function HomePageContainer() {
+export function WomenContainer() {
   return (
     <div>
       <WomenView />
