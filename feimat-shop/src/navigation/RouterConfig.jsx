@@ -1,12 +1,13 @@
 import React from 'react';
 // import { ProtectedRoutes } from 'components/guards';
-import { Home, Men, Women, Kid} from 'pages';
+import { Home, Men, Women, Kid, Cart} from 'pages';
 import { Route, Routes } from 'react-router-dom';
 import {
   HOME,
   MEN,
   WOMEN,
   KID,
+  CART,
 } from 'navigation/constants';
 
 function RouterConfig() {
@@ -19,6 +20,7 @@ function RouterConfig() {
       <Route exact path={MEN} element={<Men />} />
       <Route exact path={WOMEN} element={<Women />} />
       <Route exact path={KID} element={<Kid />} />
+      <Route exact path={CART} element={<Cart />} />
     
       {/*************************PROTECTED ROUTES************************************** */}
       {/*************************PROTECTED ROUTES************************************** */}
