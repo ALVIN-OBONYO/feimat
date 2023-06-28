@@ -16,7 +16,7 @@ function PageWrapper({ children }) {
         <div className="h-[75vh] box-border w-full">{children}</div>
       </main>
 
-      <footer className="bg-black flex justify-center items-center pt-10 pb-10">
+      <footer className="bg-black flex justify-center items-center">
         <div className="md:container py-8 px-4 lg:px-16 ">
           <PageFooter />
         </div>

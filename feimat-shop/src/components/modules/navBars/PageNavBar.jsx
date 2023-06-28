@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { logo } from 'assets/images';
-// import { Button } from 'components/widgets/Buttons';
+import { watch } from 'assets/images';
+import { CartButton } from 'components/widgets/Buttons';
 // import NavBarLinks from './NavBarLinks';
 
 const NavBar = () => {
@@ -10,8 +10,8 @@ const NavBar = () => {
     <nav>
       <div className="flex font-medium justify-around">
         <div className="z-50 md:w-auto w-full flex justify-between">
-          <img src={logo} alt="logo" className="md:cursor-pointer h-20" />
-          {/* <p className="mt-8 pl-4 text-xl">Feimat Shop</p> */}
+          <img src={watch} alt="logo" className="md:cursor-pointer h-20" />
+          <p className="pt-6 pl-4 text-xl">Feimat Shop</p>
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
             <ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
           </div>
@@ -35,6 +35,14 @@ const NavBar = () => {
           <li>
             <Link to="/Kid" className="py-7 px-3 inline-block">
               Kid Watches
+            </Link>
+          </li>
+          <li>
+            <Link to="/cart" className="py-7 px-3 inline-block">
+              <div className='flex items-center gap-4'>
+                <CartButton />
+                Cart
+              </div>
             </Link>
           </li>
           {/* <NavBarLinks /> */}
@@ -69,6 +77,11 @@ const NavBar = () => {
           <li>
             <Link to="/Kid" className="py-7 px-3 inline-block">
               Kid Watches
+            </Link>
+          </li>
+          <li>
+            <Link to="/Cart" className="py-7 px-3 inline-block">
+              Cart
             </Link>
           </li>
           {/* <NavBarLinks /> */}
