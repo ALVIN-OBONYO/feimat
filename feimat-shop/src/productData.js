@@ -1,3 +1,4 @@
+import watch10 from "./watch10.jpg";
 const ProductData = [
   {
     id: 1,
@@ -32,6 +33,13 @@ const ProductData = [
     title: 'Gogoey Mens Watch Sports Minimalistic Watches Leather',
     price: 4000.0,
     img: 'https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/03/222292/1.jpg?5427',
+    quantity: 1,
+  },
+   {
+    id: 6,
+    title: 'SOXY Men Watch Stainless Steel Calendar Quartz Sports',
+    price: 520.0,
+    img: watch10,
     quantity: 1,
   },
 ];
